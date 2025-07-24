@@ -1,0 +1,30 @@
+{
+    "problems": [
+        {
+            "title": "1. Reverse a String in JS",
+            "solutions": [
+                {
+                    "description": "Using built-in functions",
+                    "code": "const reverseString = str => str.split('').reverse().join('');\nconsole.log(reverseString(\"hello\"));"
+                },
+                {
+                    "description": "Using for loop",
+                    "code": "function reverseString(str) {\n  let reversed = \"\";\n  for (let i = str.length - 1; i >= 0; i--) {\n    reversed += str[i];\n  }\n  return reversed;\n}\nconsole.log(reverseString(\"world\"));"
+                }
+            ]
+        },
+        {
+            "title": "2. Check Palindrome in JS",
+            "solutions": [
+                {
+                    "description": "Using reverse comparison",
+                    "code": "function isPalindrome(str) {\n  const reversed = str.split('').reverse().join('');\n  return str === reversed;\n}\nconsole.log(isPalindrome(\"madam\"));"
+                },
+                {
+                    "description": "Using two-pointer approach",
+                    "code": "function isPalindrome(str) {\n  let left = 0;\n  let right = str.length - 1;\n  while (left < right) {\n    if (str[left] !== str[right]) return false;\n    left++;\n    right--;\n  }\n  return true;\n}\nconsole.log(isPalindrome(\"racecar\"));"
+                }
+            ]
+        }
+    ]
+}
