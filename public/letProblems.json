@@ -1,0 +1,22 @@
+{
+    "problems":[
+                {
+            "title": "Simple Let Examples",
+            "description": "Let allows you to declare block-scoped variables. It can be updated but not re-declared in the same scope.",
+            "solutions": [
+                {
+                    "description": "Example 1",
+                    "code": "let firstname : \"Aravind\";\nconsole.log(firstname);"
+                },
+                {
+                    "description": "Example 2",
+                    "code": "let firstname = \"Vinoth\";\nlet firstname = \"Thiru\";\nconsole.log(firstname);"
+                },
+                {
+                    "description": "Example 3",
+                    "code": "let firstname = \"Aravind\";\n{\nconsole.log(firstname);\n}"
+                }
+            ]
+        }
+    ]
+}
